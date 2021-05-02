@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        jdk "sapmachine-jdk-12.0.1.jdk"
+    }
+
     stages {
         stage('Build') {
             steps {
