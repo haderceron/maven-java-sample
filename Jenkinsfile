@@ -8,7 +8,7 @@ pipeline {
                 git 'https://github.com/haderceron/maven-java-sample.git'
 
                 // Run Maven on a Unix agent.
-                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                sh "./mvnw clean package"
             }
 
             post {
