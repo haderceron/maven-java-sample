@@ -11,7 +11,10 @@ pipeline {
                 git 'https://github.com/haderceron/maven-java-sample.git'
 
                 // Run Maven on a Unix agent.
-                sh "mvn clean test"
+                sh "mvn spring-javaformat:apply"
+
+                // Run Maven on a Unix agent.
+                sh "mvn clean package"
             }
 
             post {
