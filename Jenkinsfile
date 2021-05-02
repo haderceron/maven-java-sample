@@ -1,8 +1,8 @@
 pipeline {
     agent any
     tools { 
-        maven 'Maven 3.3.9' 
-        jdk 'jdk8' 
+        maven 'maven3.6.0' 
+        jdk 'sapmachine-jdk-12.0.1.jdk' 
     }
     stages {
         stage('Build') {
